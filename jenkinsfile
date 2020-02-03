@@ -7,7 +7,7 @@ node {
             checkout scm
 
             // Get the code from a GitHub repository
-            git credentialsId: 'mycredentials', url: 'https://github.com/frank-iz/njaairline/'
+            git credentialsId: 'mycredentials', url: 'https://github.com/frank-izo/njaairline/'
 
             slackSend color: "warning", message: "Started `${env.JOB_NAME}#${env.BUILD_NUMBER}`\n\n_The changes:_\n${lastChanges}"
 
