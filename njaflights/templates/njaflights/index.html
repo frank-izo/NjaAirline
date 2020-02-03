@@ -1,0 +1,13 @@
+{% extends "njaflights/base.html" %} {% block title %} NjaFlights {% endblock %}
+{% block body %}
+<div class="jumbotron">
+  <h1>NjaFlights</h1>
+  <ul>
+    {% for njaflight in njaflights %}
+    <li>
+      <a href="{% url 'njaflight' njaflight.id %}">{{ njaflight }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endblock %}

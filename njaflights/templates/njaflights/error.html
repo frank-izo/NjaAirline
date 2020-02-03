@@ -1,0 +1,14 @@
+{% extends "njaflights/base.html" %}
+
+{% block title %}
+  NjaFlights
+{% endblock %}
+
+{% block body %}
+    <h1>Error</h1>
+
+    {{ message }}
+
+       <hr>
+       <a href="{% url 'index' %}">Return ti njaflights</a>
+{% endblock %}
